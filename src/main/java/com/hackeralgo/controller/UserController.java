@@ -25,7 +25,7 @@ public class UserController {
         User user = userService.convertToUser(userDTO);
         User savedUser = userService.signUp(user);
         return ResponseEntity.ok(savedUser);
-    }
+    }       
 
     @GetMapping("/user/{mobileNumber}")
     public ResponseEntity<User> getUserByMobileNumber(@PathVariable Long mobileNumber) {

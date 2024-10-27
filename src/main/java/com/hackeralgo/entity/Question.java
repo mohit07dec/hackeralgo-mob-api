@@ -11,11 +11,13 @@ import java.time.LocalDateTime;
 @Table(name = "Question")
 public class Question {
     @Id
-    private String questionId;
+    private long questionId;
 
-    private String question;
-    private String answereText;
-    private String voiceUrl;
+    private String audioUrl;
+    private String questionText;
+    private String answerText;
+    private String difficulty;
+    private String category;
     private BigDecimal duration;
     private Boolean activeStatus;
     private LocalDateTime createdAt;
